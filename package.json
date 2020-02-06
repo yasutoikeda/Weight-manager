@@ -1,0 +1,11 @@
+{
+  "name": "no-give-weight",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/y-suzuki27/no-give-weight.git",
+  "author": "suzuki <kp258584@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "create-react-app": "^3.3.0"
+  }
+}
