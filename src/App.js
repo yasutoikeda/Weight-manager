@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from 'react-bootstrap';
+import { Button,Nav } from 'react-bootstrap';
 
 function App() {
   return (
@@ -17,7 +17,27 @@ function App() {
         </h1>
 
         <div>
-          <Button variant="primary">Primary</Button>
+          
+          <Nav
+            activeKey="/home"
+            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
+          >
+            <Nav.Item>
+              <Nav.Link href="/home">Active</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-1">Link</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-2">Link</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="disabled" disabled>
+                Disabled
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+
         </div>
 
         
