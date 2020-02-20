@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'react-bootstrap';
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
         <h1>
           Weight-manager
         </h1>
+
+        <div>
+          <Button variant="primary">Primary</Button>
+        </div>
 
         
 
