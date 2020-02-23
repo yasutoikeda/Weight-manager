@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button,Nav } from 'react-bootstrap';
+import { Button,Nav,Card } from 'react-bootstrap';
 
 function App() {
   return (
@@ -18,25 +18,36 @@ function App() {
 
         <div>
           
-          <Nav
-            activeKey="/home"
-            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
-          >
-            <Nav.Item>
-              <Nav.Link href="/home">Active</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-1">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-2">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="disabled" disabled>
-                Disabled
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
+        
+
+
+        <Card>
+          <Card.Header>
+          <Nav justify variant="tabs" defaultActiveKey="/home">
+                  <Nav.Item>
+                    <Nav.Link href="/home">入力画面</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="link-1">グラフ</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="link-2">設定画面</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="disabled" disabled>
+                      Disabled
+                    </Nav.Link>
+                  </Nav.Item>
+                </Nav>
+          </Card.Header>
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
 
         </div>
 
